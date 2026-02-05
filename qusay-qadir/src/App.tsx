@@ -1,8 +1,7 @@
 import { NavigationMenuDemo } from "@/components/layout/Navigation-Menu"
-import{ CardSpotlightDemo } from "@/components/layout/Animated-Hover-Cover"
+import { CardSpotlightDemo } from "@/components/layout/Animated-Hover-Cover"
 import Footer from "@/components/layout/Footer"
-
-
+import AccordionTabs from "@/components/shadcn-studio/accordion/accordion-11"
 import { ThreeCircleImages } from "./components/layout/Three-Circle-Images"
 
 import { useState } from "react"
@@ -29,7 +28,7 @@ function App() {
         </div>
       </header>
       
-      <main id="top" className="flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center gap-6 p-8">
+      <main id="about-me" className="flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center gap-6 p-8">
         {/* Hero: three circle images */}
         <section className="w-full flex flex-col items-center gap-2">
           <ThreeCircleImages
@@ -113,18 +112,31 @@ function App() {
             <div className="w-[700px] text-left space-y-3">
             <p className="whitespace-normal break-words leading-relaxed">
               Hello, I'm Qusay based in Toronto, Canada, I am currently a Software Engineering Intern @ RBC Borealis working on building a scaleable data platform for internal consumers. 
-              I am a <strong>junior</strong> Software Engineering student (minor in math) @ McMaster University with a keen interest in system design, databases, data centers and as of late Agentic AI. 
-              Programming for me is a means to build solutions to problems in these domain and I am eager to continue to learn and <strong>build things I can take ownership for!</strong>  When I am not building, I am trying to get better at competitive programming, play all kinds of racquet sports, be an expressive cinephile, lose money in options trading and lose a nights sleep drinking new coffee beans.  
+              I am a <strong>junior</strong> Software Engineering student (minor in math) @ McMaster University with a keen interest in system design, databases, networks (specifically GPU to GPU comm) and Agentic AI. 
+              Programming for me is a means to build solutions to problems in these domain and I am eager to continue to learn and <strong>build things I can take ownership for!</strong>  
+              <br/>
+              <br/> 
+              When I am not building, I play all kinds of racquet sports, be an expressive cinephile (the departed, king of comedy, and the town are my favorites), and lose a nights sleep making latte art with my new espresso machine. 
               <br/>
               <br/> 
               Seeking SWE, DE, or AI dev opportunities for <strong>Summer 2026</strong> and <strong>Fall 2026</strong> -- reach out! 
-
             </p>
             </div>
           </div>
 
         <div className="flex justify-center w-full px-4">
-          <div id="experience" className="w-max h-max grid gap-4 scroll-mt-24">
+          <div className="w-[100%] max-w-4xl h-max grid gap-4 scroll-mt-24">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Now</h2>
+            <p className="whitespace-normal break-words leading-relaxed">
+              Outside of work, I'm training for a badminton tournament, building a custom HTTP framwork from a raw TCP server, upgrading this website, and studying for my AWS certification exam! 
+              Applying to jobs, listening to new music, doing interviews all the while trying to make the most of my last year of undergrad. 
+
+            </p>
+          </div>
+        </div>
+
+        <div id="experience" className="flex justify-center w-full px-4">
+          <div className="w-[100%] max-w-4xl h-max grid gap-4 scroll-mt-24">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Previously</h2>
             <CardSpotlightDemo 
               title="Software Engineering @ RBC Borealis 
@@ -135,7 +147,8 @@ function App() {
                 <>
                   Building on-premise cloud infastructure ( Lumina Data Platform ). 
                   <br/> 
-                  Updates Incoming...
+                  Designed and developed an API router to connect multiple microservice endpoints using Python and FastAPI with JSON Web Token authentication and authorization 
+                  for sub 1ms response time for the Auth Check of the API request, eliminating a latency bottleneck. 
                   <br/>
                   <br/>
                   <strong>Tech Stack:</strong> Python, Go, NodeJS, ReactJS, Postman, Temporal
@@ -149,13 +162,16 @@ function App() {
               date="June 2025 - Jan 2026"
               description= { 
                 <>
-                Launched a full-stack application that leveraged Gemini2.5 model for a conversational AI platform to assist users in finding their dream home. 
+                Launched a conversational agentic tool leveraging the Gemini3 flash model for a AI platform to assist in finding their dream home. 
+                Using the Google ADK built agentic workflows with multiple custom agents in a SequentialAgent and ParallelAgent architecture.
                 <br/> 
-                Built agent prompts, integrated Eval Sets to measure and improve overall agentic response quality and accuracy, data pipeline to monitor it's metrics with a 
-                  <br/>
-                 dashboard, edit the agents context session window, used Model Context Protocol (MCP) Tools, Retrieval Augmented Generation and built frontend components. 
-                <br/>
-                <br/>
+                Wrote Eval Sets to measure and improve overall user experieince and LLM response quality and accuracy. 
+                <br/> 
+                Learned how to integrate <strong>Model Context Protocol Servers</strong>, <strong>Retrieval Augmented Generation</strong>, and how to effectively edit the context window to avoid context rot. 
+              
+                 <br/>
+                 <br/> 
+                
                   <strong>Tech Stack:</strong> Python, Google Agent Development Kit, Google Cloud Platform, Google Vertex RAG Engine, PostgresSQL, Docker
                 </>
               }
@@ -168,7 +184,6 @@ function App() {
               description= { 
                 <>
                   Competed @ ACE 2025 (Augmented Cognition for Exoskeletons) @ University of Michigan. As a ML & Data Engineer built a Python based Long-Short-Term-Memory 
-                  <br/> 
                   deep neural network for time-series data that classified between different movement types from IMU sensors and productionzed the model using FastAPI.
                   <br/> 
                   Engineered a Extract-Transform-Load data pipeline to process and clean 10+ hours of raw sensor data to be uploaded and downloaded from AWS S3. 
@@ -179,7 +194,7 @@ function App() {
               }
             />
             <CardSpotlightDemo 
-              title="Data Engineering @ Scotiabank
+              title="Software Engineering @ Scotiabank
               Toronto, CAN 
               " 
               date="April 2024 - Sept 2024"
@@ -194,6 +209,13 @@ function App() {
                 </>
               }
             />
+          </div>
+        </div>
+
+        <div className="flex justify-center w-full px-4">
+          <div className="w-[100%] max-w-4xl h-max grid gap-4 scroll-mt-24">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight"></h2>
+            <AccordionTabs />
           </div>
         </div>
       </main>

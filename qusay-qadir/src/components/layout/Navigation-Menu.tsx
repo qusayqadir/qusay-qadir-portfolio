@@ -74,7 +74,7 @@ export function NavigationMenuDemo() {
                   <a href="https://github.com/qusayqadir" target="_blank" rel="noopener noreferrer">Github</a>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <a href="https://wasdfasdww.instagram.com/qusay.qadir/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                  <a href="https://www.instagram.com/qusay.qadir/" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </NavigationMenuLink>
               </li>
             </ul>
