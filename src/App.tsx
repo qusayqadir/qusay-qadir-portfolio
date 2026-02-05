@@ -111,7 +111,7 @@ function App() {
           <div className="flex justify-center px-4">
             <div className="w-[700px] text-left space-y-3">
             <p className="whitespace-normal break-words leading-relaxed">
-              Hello, I'm Qusay based in Toronto, Canada, I am currently a Software Engineering Intern @ RBC Borealis working on building a scaleable data platform for internal consumers. 
+              Hello, I'm Qusay, based in Toronto, Canada, I am currently a Software Engineering Intern @ RBC Borealis working on building a scalable data platform for internal consumers. 
               I am a <strong>junior</strong> Software Engineering student (minor in math) @ McMaster University with a keen interest in system design, databases, networks (specifically GPU to GPU comm) and Agentic AI. 
               Programming for me is a means to build solutions to problems in these domain and I am eager to continue to learn and <strong>build things I can take ownership for!</strong>  
               <br/>
