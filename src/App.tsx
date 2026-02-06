@@ -142,7 +142,7 @@ function App() {
             <div className="w-[100%] max-w-4xl h-max grid gap-4 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Previously</h2>
               <CardSpotlightDemo 
-                title="Software Engineering @ RBC Borealis 
+                title="Software Engineering, Backend @ RBC Borealis 
                 Toronto, CAN
                 " 
                 date="Jan 2026 - Present"
@@ -159,7 +159,7 @@ function App() {
                 }
               />
               <CardSpotlightDemo 
-                title="Software Engineering @ Stealth AI Startup
+                title="Software Engineering, Agentic & AI @ Stealth AI Startup
                 San Francisco, US 
                 " 
                 date="June 2025 - Jan 2026"
@@ -180,7 +180,7 @@ function App() {
                 }
               />
               <CardSpotlightDemo 
-                title="Software Engineering @ McMaster Exoskeleton
+                title="Software Engineering, ML & AI @ McMaster Exoskeleton
                 Hamilton, CAN
                 " 
                 date="Nov 2024 - Dec 2025"
@@ -197,7 +197,7 @@ function App() {
                 }
               />
               <CardSpotlightDemo 
-                title="Software Engineering @ Scotiabank
+                title="Software Engineering, Data @ Scotiabank
                 Toronto, CAN 
                 " 
                 date="April 2024 - Sept 2024"
