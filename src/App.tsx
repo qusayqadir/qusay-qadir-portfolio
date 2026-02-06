@@ -159,7 +159,7 @@ function App() {
                 }
               />
               <CardSpotlightDemo 
-                title="Software Engineering, Agentic & AI @ Stealth AI Startup
+                title="Software Engineering, Backend @ Stealth AI Startup
                 San Francisco, US 
                 " 
                 date="June 2025 - Jan 2026"
