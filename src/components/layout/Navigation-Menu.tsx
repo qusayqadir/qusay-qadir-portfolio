@@ -12,6 +12,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import resumePdf from "@/assets/Qusay_Qadir_McMasterUniversity_DataPlatformEngineer.pdf"
+import { ModeToggle } from "../ui/mode-toggle"
 
 export function NavigationMenuDemo() {
   const isMobile = useIsMobile()
@@ -86,6 +87,11 @@ export function NavigationMenuDemo() {
             <a href={resumePdf} target="_blank" rel="noopener noreferrer">Resume</a>
           </NavigationMenuLink>
         </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <ModeToggle />
+        </NavigationMenuItem>
+
       </NavigationMenuList>
     </NavigationMenu>
   )
