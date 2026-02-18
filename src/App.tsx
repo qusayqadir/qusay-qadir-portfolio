@@ -154,7 +154,7 @@ function App() {
                     for sub 1ms response time for the Auth Check of the API request, eliminating a latency bottleneck. 
                     <br/>
                     <br/>
-                    <strong>Tech Stack:</strong> Python, Go, NodeJS, ReactJS, Postman, Temporal
+                    <strong>Tech Stack:</strong> Python, Go, NodeJS, ReactJS, Postman, Temporal, DBeaver
                   </>
                 }
               />

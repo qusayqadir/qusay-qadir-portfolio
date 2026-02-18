@@ -7,7 +7,7 @@ const items = [
       <>
         <strong>Cloud Platforms:</strong> AWS (EC2, Kafka, Flink, Redis), GCP (Vertex Rag Engine, LookerStudio)
         <br />
-        <strong>Databases:</strong> PostgreSQL, MySQL, MongoDB
+        <strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, DBeaver
         <br />
         <strong>Tools:</strong> Git/GitHub, Postman, Temporal, Docker, Grafana, Jira
       </>
